@@ -1,5 +1,6 @@
 package com.turkcell.spring.starter.controller;
 
+import com.turkcell.spring.starter.dto.user.LoginDto;
 import com.turkcell.spring.starter.entity.User;
 import com.turkcell.spring.starter.service.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,8 +23,9 @@ public class UsersController {
     }
 
     @PostMapping("login")
-    public boolean login(@RequestBody User user) {
-      return userService.login(user);
+    public String login(@RequestBody LoginDto loginDto) {
+      return userService.login(loginDto);
     }
+
 
 }

@@ -9,7 +9,6 @@ import com.turkcell.spring.starter.rules.CategoryBusinessRules;
 import com.turkcell.spring.starter.util.exception.type.BusinessException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
